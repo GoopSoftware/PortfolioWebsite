@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+ENV/
+env/
+../../.venv/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Mypy
+.mypy_cache/
+
+# Flask instance folder (if using instance configuration)
+instance/
+
+# Web assets (if using Flask-Assets)
+.webassets-cache
+
+# Editor directories and files (optional)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db

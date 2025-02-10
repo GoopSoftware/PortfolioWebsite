@@ -1,0 +1,30 @@
+{# macros.html #}
+{% macro project_item(video_filename, title, description, github_url, skills=None) %}
+
+<div class="row my-4">
+            <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                    <video controls>
+                        <source src="{{ url_for('static', filename=video_filename) }}" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+        <div class="col-md-6">
+            <div class="border p-3">
+                <h2>{{title}}</h2>
+                    <p>
+                        {{ description }}
+                    <a href="{{github_url}}">Github</a>
+                    </p>
+            </div>
+            {% if skills %}
+                <ul class="list-group mt-2">
+                    {% for skill in skills %}
+                    <li class="list-group-item">{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            </div>
+        </div>
+{% endmacro %}
